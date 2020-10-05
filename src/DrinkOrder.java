@@ -4,7 +4,7 @@ public class DrinkOrder {
         drink1.name = "Janusz drynk";
         drink1.price = 9.99;
         drink1.alcohol = true;
-
+//Składniki
 drink1.ingredient1Name = "Wódka";
 drink1.ingredient2Name = "Tequila";
 drink1.ingredient3Name = "Zimna woda z kranu";
@@ -15,7 +15,7 @@ drink1.ingredient3Amount = 150;
 int totalAmount = drink1.ingredient1Amount + drink1.ingredient2Amount + drink1.ingredient3Amount;
 
 drink1.volumeMeasure = "ml";
-
+//Wyświetlanie
         System.out.println("Nazwa drinka: " + drink1.name);
         System.out.println("Cena drinka: " + drink1.price + "zł");
         System.out.println("Drink alkoholowy: " + drink1.alcohol);
