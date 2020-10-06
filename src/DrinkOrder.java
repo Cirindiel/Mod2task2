@@ -5,24 +5,25 @@ public class DrinkOrder {
         drink1.price = 9.99;
         drink1.alcohol = true;
 
-drink1.ingredient1Name = "Wódka";
-drink1.ingredient2Name = "Tequila";
-drink1.ingredient3Name = "Zimna woda z kranu";
-drink1.ingredient1Amount = 20;
-drink1.ingredient2Amount = 30;
-drink1.ingredient3Amount = 150;
+        Ingredient ingredient1 = new Ingredient();
+        ingredient1.name = "wódka";
+        ingredient1.amount = 20;
 
-int totalAmount = drink1.ingredient1Amount + drink1.ingredient2Amount + drink1.ingredient3Amount;
+        Ingredient ingredient2 = new Ingredient();
+        ingredient2.name = "tequila";
+        ingredient2.amount = 30;
 
-drink1.volumeMeasure = "ml";
+        Ingredient ingredient3 = new Ingredient();
+        ingredient3.name = "zimna woda z kranu";
+        ingredient3.amount = 150;
+
+        int totalAmount = ingredient1.amount + ingredient2.amount + ingredient3.amount;
 
         System.out.println("Nazwa drinka: " + drink1.name);
         System.out.println("Cena drinka: " + drink1.price + "zł");
         System.out.println("Drink alkoholowy: " + drink1.alcohol);
-        System.out.println("Objętość drinka: "  + totalAmount + drink1.volumeMeasure);
-        System.out.println("Skład drinka:");
-        System.out.println(drink1.ingredient1Amount + drink1.volumeMeasure + " " + drink1.ingredient1Name);
-        System.out.println(drink1.ingredient2Amount + drink1.volumeMeasure + " " + drink1.ingredient2Name);
-        System.out.println(drink1.ingredient3Amount + drink1.volumeMeasure + " " + drink1.ingredient3Name);
+        System.out.println("Objętość drinka: " + totalAmount + "ml");
+        System.out.print("Skład drinka: ");
+        System.out.print(ingredient1.name + ", " + ingredient2.name + ", " + ingredient3.name + ".");
     }
 }
