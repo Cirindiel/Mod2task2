@@ -17,12 +17,12 @@ public class DrinkOrder {
         ingredient3.name = "zimna woda z kranu";
         ingredient3.amount = 150;
 
-int totalAmount = ingredient1.amount + ingredient2.amount + ingredient3.amount;
+        int totalAmount = ingredient1.amount + ingredient2.amount + ingredient3.amount;
 
         System.out.println("Nazwa drinka: " + drink1.name);
         System.out.println("Cena drinka: " + drink1.price + "zł");
         System.out.println("Drink alkoholowy: " + drink1.alcohol);
-        System.out.println("Objętość drinka: "  + totalAmount + "ml");
+        System.out.println("Objętość drinka: " + totalAmount + "ml");
         System.out.print("Skład drinka: ");
         System.out.print(ingredient1.name + ", " + ingredient2.name + ", " + ingredient3.name + ".");
     }
