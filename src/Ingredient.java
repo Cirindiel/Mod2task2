@@ -1,4 +1,4 @@
-public class Ingredient1 {
+public class Ingredient {
     String name;
     int amount;
 }

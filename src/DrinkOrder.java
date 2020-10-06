@@ -5,15 +5,15 @@ public class DrinkOrder {
         drink1.price = 9.99;
         drink1.alcohol = true;
 
-        Ingredient1 ingredient1 = new Ingredient1();
+        Ingredient ingredient1 = new Ingredient();
         ingredient1.name = "wódka";
         ingredient1.amount = 20;
 
-        Ingredient2 ingredient2 = new Ingredient2();
+        Ingredient ingredient2 = new Ingredient();
         ingredient2.name = "tequila";
         ingredient2.amount = 30;
 
-        Ingredient3 ingredient3 = new Ingredient3();
+        Ingredient ingredient3 = new Ingredient();
         ingredient3.name = "zimna woda z kranu";
         ingredient3.amount = 150;
 
